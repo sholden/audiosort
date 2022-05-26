@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require "audiosort"
+
+from_path, to_path = ARGV[0], ARGV[1]
+
+unless from_path && to_path
+  puts("Usage: audiosort [from_path] [to_path]")
+  exit 1
+end
+
+Audiosort::Sorter.new(from_path: from_path, to_path: to_path).call
