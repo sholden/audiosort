@@ -38,7 +38,7 @@ module Audiosort
         artists = artists.reject(&:empty?).uniq
         albums = albums.reject(&:empty?).uniq
         if artists.count != 1
-          logger.error("Bad Artists: #{artists.inspect}") if artists.count != 1
+          logger.error("Bad Artists: #{artists.inspect}")
           next
         elsif albums.count != 1
           logger.error("Bad Albums: #{albums.inspect}")
