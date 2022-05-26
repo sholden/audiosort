@@ -5,7 +5,7 @@ Sort your audio files by /library/artist/album
 ## Usage
 `bundle install`
 
-`bundle exec bin/audiosort from_path to_path` 
+`bundle exec exe/audiosort from_path to_path` 
 
 ## Development
 
